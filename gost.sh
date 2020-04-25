@@ -69,7 +69,6 @@ check_nor_file(){
            `rm -rf "$(pwd)"/gost`
              `rm -rf "$(pwd)"/gost.service`
              `rm -rf "$(pwd)"/config.json`
-             `rm -rf "$(pwd)"/gost.sh`
              `rm -rf /etc/gost`
              `rm -rf /usr/lib/systemd/system/gost.service`
              `rm -rf /usr/bin/gost`
