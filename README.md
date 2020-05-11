@@ -1,6 +1,11 @@
 一键脚本安装方法：
 ```
+快速使用(不保存gost.sh脚本)
+bash <(curl -sL https://sh.334433.xyz/gost.sh)
+
 国内使用
+wget https://sh.334433.xyz/gost.sh && chmod +x gost.sh && bash gost.sh
+或者
 wget https://cdn.jsdelivr.net/gh/eicky/gost.sh/gost.sh && chmod +x gost.sh && bash gost.sh
 
 国外使用
