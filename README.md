@@ -18,7 +18,7 @@ wget https://git.io/gost.sh && chmod +x gost.sh && bash gost.sh
     "Retries": 0,
     "ServeNodes": [
            "tcp://:111/1.1.1.1:443",
-           "udp://:222/2.2.2.2:443",
+           "udp://:222/2.2.2.2:443"
     ]
 }
 ```
