@@ -132,6 +132,11 @@ Status_ct(){
           echo -e "`systemctl status gost`"
 }
 
+Config_ct(){
+          echo -e "${Green_font_prefix} 配置文件路径: /etc/gost/config.json ${Font_color_suffix}" 
+          echo -e "`cat /etc/gost/config.json`"
+}
+
 echo "the last version has been launched in my blog" 
 echo && echo -e "       Gost一键安装脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
   ---- Eicky | https://eicky.com ----
@@ -143,28 +148,32 @@ echo && echo -e "       Gost一键安装脚本 ${Red_font_prefix}[v${sh_ver}]${F
  ${Green_font_prefix}4.${Font_color_suffix} 停止 gost
  ${Green_font_prefix}5.${Font_color_suffix} 重启 gost
  ${Green_font_prefix}6.${Font_color_suffix} 状态 gost 
+ ${Green_font_prefix}7.${Font_color_suffix} 配置 gost 
 ————————————" && echo
-read -e -p " 请输入数字 [1-6]:" num
+read -e -p " 请输入数字 [1-7]:" num
 case "$num" in
-	1)
-	Install_ct
-	;;
-	2)
-	Uninstall_ct
-	;;
-	3)
-	Start_ct
-	;;
-	4)
-	Stop_ct
-	;;
-	5)
-	Restart_ct
-	;;
+  1)
+  Install_ct
+  ;;
+  2)
+  Uninstall_ct
+  ;;
+  3)
+  Start_ct
+  ;;
+  4)
+  Stop_ct
+  ;;
+  5)
+  Restart_ct
+  ;;
   6)
   Status_ct
   ;;
-	*)
-	echo "请输入正确数字 [1-6]"
-	;;
+  7)
+  Config_ct
+  ;;
+  *)
+  echo "请输入正确数字 [1-7]"
+  ;;
 esac
