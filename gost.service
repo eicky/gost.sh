@@ -9,6 +9,7 @@ User=root
 Restart=on-failure
 RestartSec=5s
 DynamicUser=true
+LimitNOFILE=20480000
 ExecStart=/usr/bin/gost -C /etc/gost/config.json
 
 [Install]
